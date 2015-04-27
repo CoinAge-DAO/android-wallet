@@ -45,17 +45,17 @@ import com.coinprism.wallet.UserPreferences;
 import com.coinprism.wallet.adapter.AssetSelectorAdapter;
 import com.google.zxing.integration.android.IntentIntegrator;
 
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.ScriptBuilder;
+import org.solarij.core.ECKey;
+import org.solarij.core.Transaction;
+import org.solarij.crypto.TransactionSignature;
+import org.solarij.script.ScriptBuilder;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 
 /**
- * The tab allowing the user to send assets or bitcoins.
+ * The tab allowing the user to send assets or solaris.
  */
 public class SendTab extends Fragment
 {
@@ -111,7 +111,7 @@ public class SendTab extends Fragment
 
         this.adapter.clear();
 
-        // Add uncolored bitcoins to the list
+        // Add uncolored solaris to the list
         this.adapter.add(null);
         // Add all known assets to the list
         this.adapter.addAll(WalletState.getState().getAPIClient().getAllAssetDefinitions());
@@ -161,7 +161,7 @@ public class SendTab extends Fragment
 
                     if (selectedAsset == null)
                     {
-                        // Send uncolored bitcoins
+                        // Send uncolored solaris
                         return WalletState.getState().getAPIClient().buildTransaction(
                             WalletState.getState().getConfiguration().getAddress(),
                             to, decimalAmount.scaleByPowerOfTen(8).toBigInteger().toString(), null, fees);
@@ -231,7 +231,7 @@ public class SendTab extends Fragment
 
         final String assetName;
         if (selectedAsset == null)
-            assetName = getString(R.string.tab_send_dialog_confirm_message_amount_bitcoin);
+            assetName = getString(R.string.tab_send_dialog_confirm_message_amount_solari);
         else
         {
             if (selectedAsset.getName() != null && selectedAsset.getTicker() != null)

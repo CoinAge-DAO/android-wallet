@@ -26,7 +26,7 @@
           android:layout_height="wrap_content"
           android:layout_width="match_parent"
           android:textOn="@string/tab_wallet_receive_assets"
-          android:textOff="@string/tab_wallet_receive_bitcoins"
+          android:textOff="@string/tab_wallet_receive_solaris"
           android:layout_marginTop="4dp"
           android:layout_alignParentBottom="true"
           android:textAppearance="@android:style/TextAppearance.Medium"/>

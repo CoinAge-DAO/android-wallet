@@ -92,12 +92,12 @@ public class TransactionAdapter extends ArrayAdapter<SingleAssetTransaction>
         {
             Drawable btc = context.getResources().getDrawable(R.drawable.btc);
 
-            BigDecimal bitcoinValue = new BigDecimal(balance.getQuantity())
+            BigDecimal solariValue = new BigDecimal(balance.getQuantity())
                 .scaleByPowerOfTen(-8);
 
             assetBalance.setText(
                 String.format(
-                    context.getString(R.string.tab_wallet_bitcoin_count), Formatting.formatNumber(bitcoinValue)));
+                    context.getString(R.string.tab_wallet_solari_count), Formatting.formatNumber(solariValue)));
             assetIcon.setImageDrawable(btc);
         }
         else if (balance.getAsset().getIsUnknown())

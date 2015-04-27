@@ -39,8 +39,8 @@ import com.coinprism.model.WalletState;
 import com.coinprism.utils.SecurePreferences;
 import com.google.common.base.Joiner;
 
-import org.bitcoinj.crypto.MnemonicCode;
-import org.bitcoinj.crypto.MnemonicException;
+import org.solarij.crypto.MnemonicCode;
+import org.solarij.crypto.MnemonicException;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -81,7 +81,7 @@ public class UserPreferences extends PreferenceActivity
             final String currentValue = sharedPrefs.getString(
                 defaultFeesKey, getResources().getString(R.string.default_fees));
 
-            defaultFeeText.setSummary(getString(R.string.tab_wallet_bitcoin_count, currentValue));
+            defaultFeeText.setSummary(getString(R.string.tab_wallet_solari_count, currentValue));
 
             final String versionName = BuildConfig.VERSION_NAME;
             final Preference versionPreference = findPreference("version_number");
@@ -353,7 +353,7 @@ public class UserPreferences extends PreferenceActivity
 
                     if (decimal.compareTo(BigDecimal.ZERO) >= 0)
                     {
-                        textPreference.setSummary(defaultFees + " BTC");
+                        textPreference.setSummary(defaultFees + " SRI");
                         return;
                     }
                 }
@@ -361,7 +361,7 @@ public class UserPreferences extends PreferenceActivity
                 { }
 
                 textPreference.setText(value);
-                textPreference.setSummary(value + " BTC");
+                textPreference.setSummary(value + " SRI");
             }
             else if (WalletConfiguration.passwordKey.equals(key))
             {

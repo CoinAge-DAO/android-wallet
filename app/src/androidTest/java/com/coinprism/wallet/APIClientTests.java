@@ -25,8 +25,8 @@ import com.coinprism.model.SingleAssetTransaction;
 
 import junit.framework.Assert;
 
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
+import org.solarij.core.NetworkParameters;
+import org.solarij.core.Transaction;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -44,7 +44,7 @@ public class APIClientTests extends InstrumentationTestCase
                 return  "{" +
                     "  \"address\": \"akMVNmYwN8bqqQknswpgPCoVCUAyiXyDxvG\",\n" +
                     "  \"asset_address\": \"akMVNmYwN8bqqQknswpgPCoVCUAyiXyDxvG\",\n" +
-                    "  \"bitcoin_address\": \"1BXVXP82f7x9YWdWuCaCYwad8ZoYayyRYt\",\n" +
+                    "  \"solari_address\": \"1BXVXP82f7x9YWdWuCaCYwad8ZoYayyRYt\",\n" +
                     "  \"issuable_asset\": \"AcuREPQJemxHwqVZzbsutcVVqPr4HwjXBa\",\n" +
                     "  \"balance\": 500,\n" +
                     "  \"unconfirmed_balance\": 1500,\n" +
@@ -73,7 +73,7 @@ public class APIClientTests extends InstrumentationTestCase
                     return "{" +
                         "  \"address\": \"akMVNmYwN8bqqQknswpgPCoVCUAyiXyDxvG\",\n" +
                         "  \"asset_address\": \"akMVNmYwN8bqqQknswpgPCoVCUAyiXyDxvG\",\n" +
-                        "  \"bitcoin_address\": \"1BXVXP82f7x9YWdWuCaCYwad8ZoYayyRYt\",\n" +
+                        "  \"solari_address\": \"1BXVXP82f7x9YWdWuCaCYwad8ZoYayyRYt\",\n" +
                         "  \"issuable_asset\": \"AcuREPQJemxHwqVZzbsutcVVqPr4HwjXBa\",\n" +
                         "  \"balance\": 500,\n" +
                         "  \"unconfirmed_balance\": 1500,\n" +
@@ -126,7 +126,7 @@ public class APIClientTests extends InstrumentationTestCase
                     return "{" +
                         "  \"address\": \"akMVNmYwN8bqqQknswpgPCoVCUAyiXyDxvG\",\n" +
                         "  \"asset_address\": \"akMVNmYwN8bqqQknswpgPCoVCUAyiXyDxvG\",\n" +
-                        "  \"bitcoin_address\": \"1BXVXP82f7x9YWdWuCaCYwad8ZoYayyRYt\",\n" +
+                        "  \"solari_address\": \"1BXVXP82f7x9YWdWuCaCYwad8ZoYayyRYt\",\n" +
                         "  \"issuable_asset\": \"AcuREPQJemxHwqVZzbsutcVVqPr4HwjXBa\",\n" +
                         "  \"balance\": 500,\n" +
                         "  \"unconfirmed_balance\": 1500,\n" +

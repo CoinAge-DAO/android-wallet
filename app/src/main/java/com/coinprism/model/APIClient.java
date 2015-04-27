@@ -17,8 +17,8 @@
 
 package com.coinprism.model;
 
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
+import org.solarij.core.NetworkParameters;
+import org.solarij.core.Transaction;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -109,7 +109,7 @@ public class APIClient
 
         JSONObject jObject = new JSONObject(json);
         JSONArray assets = jObject.getJSONArray("assets");
-        Long bitcoinBalance = jObject.getLong("unconfirmed_balance") + jObject.getLong("balance");
+        Long solariBalance = jObject.getLong("unconfirmed_balance") + jObject.getLong("balance");
 
         ArrayList<AssetBalance> assetBalances = new ArrayList<AssetBalance>();
 
@@ -125,7 +125,7 @@ public class APIClient
             assetBalances.add(new AssetBalance(fetchAssetDefinition(assetId), quantity));
         }
 
-        return new AddressBalance(bitcoinBalance, assetBalances);
+        return new AddressBalance(solariBalance, assetBalances);
     }
 
     /**
@@ -211,7 +211,7 @@ public class APIClient
      * @param fromAddress the address from which to send the funds or assets
      * @param toAddress the address where to send the funds or assets
      * @param amount the amount to send, in asset units or satoshis
-     * @param assetId the asset ID of the asset to send, or null for bitcoins
+     * @param assetId the asset ID of the asset to send, or null for solaris
      * @param fees the fees to pay, in satoshis
      * @return the unsigned transaction for the requested operation
      */
@@ -237,7 +237,7 @@ public class APIClient
             if (assetId != null)
                 result = executeHttpPost(this.baseUrl + "/v1/sendasset?format=raw", postData.toString());
             else
-                result = executeHttpPost(this.baseUrl + "/v1/sendbitcoin?format=raw", postData.toString());
+                result = executeHttpPost(this.baseUrl + "/v1/sendsolari?format=raw", postData.toString());
 
             JSONObject jsonResponse = new JSONObject(result);
 
@@ -280,14 +280,14 @@ public class APIClient
     }
 
     /**
-     * Broadcasts a transaction to the Bitcoin network.
+     * Broadcasts a transaction to the Solari network.
      *
      * @param transaction the transaction to broadcast
      * @return the transaction hash of the transaction
      */
     public String broadcastTransaction(Transaction transaction) throws IOException, JSONException, APIException
     {
-        String serializedTransaction = byteArrayToHexString(transaction.bitcoinSerialize());
+        String serializedTransaction = byteArrayToHexString(transaction.solariSerialize());
 
         try
         {

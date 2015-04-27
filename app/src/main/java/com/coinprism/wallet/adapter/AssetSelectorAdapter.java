@@ -57,7 +57,7 @@ public class AssetSelectorAdapter extends ArrayAdapter<AssetDefinition>
         AssetDefinition item = values.get(position);
 
         if (item == null)
-            rowView.setText(context.getString(R.string.tab_send_selector_short_bitcoin));
+            rowView.setText(context.getString(R.string.tab_send_selector_short_solari));
         else if (item.getTicker() != null)
             rowView.setText(item.getTicker());
         else
@@ -77,7 +77,7 @@ public class AssetSelectorAdapter extends ArrayAdapter<AssetDefinition>
         AssetDefinition item = values.get(position);
 
         if (item == null)
-            rowView.setText(context.getString(R.string.tab_send_selector_long_bitcoin));
+            rowView.setText(context.getString(R.string.tab_send_selector_long_solari));
         else if (item.getName() != null)
             rowView.setText(item.getName());
         else

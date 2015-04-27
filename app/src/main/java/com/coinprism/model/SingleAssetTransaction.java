@@ -21,7 +21,7 @@ import java.math.BigInteger;
 import java.util.Date;
 
 /**
- * Represents a fraction of a transaction, either transferring an asset or bitcoins.
+ * Represents a fraction of a transaction, either transferring an asset or solaris.
  */
 public class SingleAssetTransaction
 {

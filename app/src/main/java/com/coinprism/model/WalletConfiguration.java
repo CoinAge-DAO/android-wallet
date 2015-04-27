@@ -21,12 +21,12 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Base64;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.VersionedChecksummedBytes;
-import org.bitcoinj.crypto.DeterministicKey;
-import org.bitcoinj.crypto.HDKeyDerivation;
+import org.solarij.core.Address;
+import org.solarij.core.ECKey;
+import org.solarij.core.NetworkParameters;
+import org.solarij.core.VersionedChecksummedBytes;
+import org.solarij.crypto.DeterministicKey;
+import org.solarij.crypto.HDKeyDerivation;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -65,7 +65,7 @@ public class WalletConfiguration
     }
 
     /**
-     * Gets the main address of a wallet (for receiving Bitcoins).
+     * Gets the main address of a wallet (for receiving Solaris).
      * @return the main address of the wallet
      */
     public String getAddress()

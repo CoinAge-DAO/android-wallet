@@ -104,7 +104,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 20 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="bitcoinj-core-0.12" level="project" />
+    <orderEntry type="library" exported="" name="solarij-core-0.12" level="project" />
     <orderEntry type="library" exported="" name="android-integration-3.1.0" level="project" />
     <orderEntry type="library" exported="" name="jcip-annotations-1.0" level="project" />
     <orderEntry type="library" exported="" name="core-3.1.0" level="project" />

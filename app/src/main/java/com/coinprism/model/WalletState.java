@@ -23,8 +23,8 @@ import com.coinprism.wallet.fragment.BalanceTab;
 import com.coinprism.wallet.fragment.SendTab;
 import com.coinprism.wallet.fragment.TransactionsTab;
 
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.crypto.MnemonicCode;
+import org.solarij.core.NetworkParameters;
+import org.solarij.crypto.MnemonicCode;
 
 import java.io.IOException;
 import java.util.Timer;

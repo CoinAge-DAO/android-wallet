@@ -77,7 +77,7 @@ public class BalanceTab extends Fragment
                 }
             });
 
-        listHeaderView = inflater.inflate(R.layout.fragment_tab_balances_bitcoin, listView, false);
+        listHeaderView = inflater.inflate(R.layout.fragment_tab_balances_solari, listView, false);
         assetHeaderText = listHeaderView.findViewById(R.id.assetsHeader);
         listView.addHeaderView(listHeaderView, null, false);
         listView.setAdapter(adapter);
@@ -120,7 +120,7 @@ public class BalanceTab extends Fragment
                 else {
                     dialog.configure(
                         WalletState.getState().getConfiguration().getAddress(),
-                        getString(R.string.tab_wallet_dialog_qr_title_bitcoin));
+                        getString(R.string.tab_wallet_dialog_qr_title_solari));
                 }
 
                 dialog.show(BalanceTab.this.getActivity().getSupportFragmentManager(), "");
@@ -179,14 +179,14 @@ public class BalanceTab extends Fragment
         {
             // The balance was successfully updated
 
-            final BigDecimal bitcoinValue = new BigDecimal(balance.getSatoshiBalance())
+            final BigDecimal solariValue = new BigDecimal(balance.getSatoshiBalance())
                 .scaleByPowerOfTen(-8);
 
             final Drawable btc = getResources().getDrawable(R.drawable.btc);
 
             AssetBalanceAdapter.setBalanceItemContents(this.listHeaderView,
                 String.format(
-                    getString(R.string.tab_wallet_bitcoin_count), Formatting.formatNumber(bitcoinValue)), "", btc);
+                    getString(R.string.tab_wallet_solari_count), Formatting.formatNumber(solariValue)), "", btc);
 
             this.adapter.clear();
             this.adapter.addAll(balance.getAssetBalances());

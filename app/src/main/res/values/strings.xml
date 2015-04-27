@@ -10,27 +10,27 @@
 
   <!-- Balances tab -->
   <string name="tab_wallet_your_address_label">Your address</string>
-  <string name="tab_wallet_receive_bitcoins">Receive Bitcoins</string>
+  <string name="tab_wallet_receive_solaris">Receive Solaris</string>
   <string name="tab_wallet_receive_assets">Receive Assets</string>
   <string name="tab_wallet_qr_code_label">QR Code</string>
   <string name="tab_wallet_loading_wallet_label">Loading wallet…</string>
   <string name="tab_wallet_loading_wallet_error">Error opening wallet</string>
   <string name="tab_wallet_units_count">%s Units</string>
-  <string name="tab_wallet_bitcoin_count">%s BTC</string>
+  <string name="tab_wallet_solari_count">%s SRI</string>
   <string name="tab_wallet_asset_id">Asset ID: %s</string>
   <string name="tab_wallet_balance_label">Balance</string>
   <string name="tab_wallet_assets_label">Assets</string>
   <string name="tab_wallet_dialog_qr_close">Close</string>
   <string name="tab_wallet_dialog_qr_copy_address">Copy address</string>
-  <string name="tab_wallet_dialog_qr_title_assets">Receive bitcoins or colored coins</string>
-  <string name="tab_wallet_dialog_qr_title_bitcoin">Receive bitcoins</string>
+  <string name="tab_wallet_dialog_qr_title_assets">Receive solaris or colored coins</string>
+  <string name="tab_wallet_dialog_qr_title_solari">Receive solaris</string>
 
   <!-- Send tab -->
   <string name="tab_send_destination_address_label">Destination Address</string>
   <string name="tab_send_amount_label">Amount</string>
   <string name="tab_send_send_button">Send</string>
   <string name="tab_send_error_invalid_amount">The amount is invalid.</string>
-  <string name="tab_send_error_insufficient_funds">You don\'t have enough bitcoins on your address.</string>
+  <string name="tab_send_error_insufficient_funds">You don\'t have enough solaris on your address.</string>
   <string name="tab_send_error_insufficient_asset">You don\'t have enough assets on your address.</string>
   <string name="tab_send_error_amount_too_low">The amount you entered is too low.</string>
   <string name="tab_send_error_server_error">Please make sure the address is valid and the application is up to date.</string>
@@ -47,14 +47,14 @@
   <string name="tab_send_dialog_transaction_successful_see">See transaction</string>
   <string name="tab_send_dialog_transaction_successful_close">Close</string>
   <string name="tab_send_dialog_confirm_message">You are about to send %1$s %2$s to the following address:\n\n%3$s</string>
-  <string name="tab_send_dialog_confirm_message_amount_bitcoin">BTC</string>
+  <string name="tab_send_dialog_confirm_message_amount_solari">SRI</string>
   <string name="tab_send_dialog_confirm_message_amount_known_asset">%1$s (%2$s)</string>
   <string name="tab_send_dialog_confirm_message_amount_unknown_asset">units (Asset ID: %s)</string>
   <string name="tab_send_dialog_confirm_password">Enter your wallet password to confirm</string>
   <string name="tab_send_dialog_confirm_password_incorrect">The password is incorrect.</string>
-  <string name="tab_send_selector_short_bitcoin">BTC</string>
+  <string name="tab_send_selector_short_solari">SRI</string>
   <string name="tab_send_selector_short_unknown_asset">Units</string>
-  <string name="tab_send_selector_long_bitcoin">Bitcoin</string>
+  <string name="tab_send_selector_long_solari">Solari</string>
   <string name="tab_send_selector_long_unknown_asset">Asset ID: %s…</string>
 
   <!-- Transactions tab -->
@@ -65,7 +65,7 @@
 
   <!-- General -->
   <string name="general_first_launch_title">Welcome</string>
-  <string name="general_first_launch_message">This is your new wallet for Bitcoins and colored coins. We have generated a new key for your wallet, please write it down and store it in a safe place:\n\n%s</string>
+  <string name="general_first_launch_message">This is your new wallet for Solaris and colored coins. We have generated a new key for your wallet, please write it down and store it in a safe place:\n\n%s</string>
   <string name="general_first_launch_close">Close</string>
 
   <!-- Settings -->

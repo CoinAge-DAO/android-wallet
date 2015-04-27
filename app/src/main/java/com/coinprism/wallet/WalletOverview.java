@@ -34,8 +34,8 @@ import com.google.common.base.Joiner;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-import org.bitcoinj.crypto.MnemonicCode;
-import org.bitcoinj.crypto.MnemonicException;
+import org.solarij.crypto.MnemonicCode;
+import org.solarij.crypto.MnemonicException;
 
 import java.util.List;
 
